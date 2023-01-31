@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --black: #4D4C59;
+    --purple: #6C63FF;
+    --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+    font-family: 'Poppins', sans-serif;
+  }
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+#top-image{
+    background-image:url('../assets/top-image.svg');
+    height: 188px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color: var(--purple);
+}
+
+#time-description{
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+#time-description span{
+    color: var(--light-grey);
+    width: 101px;
+    text-align: center;
+}
+
+#timer{
+    color: var(--black);
+    font-size: 72px;
+}
+
+p{
+    color: var(--text-color)
+}
+
+#subscribe-container{
+    margin: 20px;
+}
+
+button{
+    position: relative;
+    left: 27%;
+    width: 160px;
+    height: 46px;
+    background-color: var(--purple);
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover{
+    background-color: #8C63FF;
+    font-weight: bold;
+}
+
+#image-main{
+    background-image:url('../assets/rocket.svg');
+    height: 435px;
+    width: 607px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bottom-image{
+    background-image:url('../assets/bottom-image.svg');
+    height: 229px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom:0;
+}
+
+@media only screen and (max-width: 1051px) {
+    #image-main{
+        width: 418px;
+        height: 300px;
+   }
+}
